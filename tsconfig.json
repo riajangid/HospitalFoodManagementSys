@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "declaration": true,
+      "removeComments": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "noImplicitAny": false,
+      "strictNullChecks": false,
+      "strictPropertyInitialization": false,
+      "target": "es2017",
+      "moduleResolution": "node",
+      "baseUrl": "./",
+      "incremental": true,
+      "skipLibCheck": true,
+      "outDir": "./dist" // Output will go to the 'dist' folder
+    },
+    "include": [
+      "src//*" // Includes all files in the 'src' directory
+    ],
+    "exclude": [
+      "node_modules", // Excludes dependencies
+      "dist",         // Excludes the build folder
+      "test",         // Excludes test files
+      "/*spec.ts"   // Excludes test specifications
+    ]
+  }
